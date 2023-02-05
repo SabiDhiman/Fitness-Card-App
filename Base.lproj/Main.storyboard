@@ -79,8 +79,11 @@
                     <connections>
                         <outlet property="cardImageView" destination="hr2-Sq-8Vd" id="16U-9P-2lD"/>
                         <outlet property="restartButton" destination="iaX-uC-qGp" id="ZgM-h5-Jmo"/>
-                        <outlet property="rulesButton" destination="h5f-Tj-2fV" id="HcO-Ue-Co8"/>
+                        <outlet property="rulesButton" destination="h5f-Tj-2fV" id="zj9-3o-r71"/>
                         <outlet property="stopButton" destination="M60-TE-RVI" id="lWE-p7-p6g"/>
+                        <outletCollection property="buttons" destination="M60-TE-RVI" collectionClass="NSMutableArray" id="mRX-Ws-kJh"/>
+                        <outletCollection property="buttons" destination="iaX-uC-qGp" collectionClass="NSMutableArray" id="szu-lc-k3o"/>
+                        <outletCollection property="buttons" destination="h5f-Tj-2fV" collectionClass="NSMutableArray" id="b1i-EM-rme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
