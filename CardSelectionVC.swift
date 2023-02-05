@@ -18,7 +18,7 @@ class CardSelectionVC: UIViewController {
     
      
     @IBOutlet var buttons: [UIButton]!
-    
+    //created an array with all three uibuttons  - must click the dot and drag  to all the remaining buttons
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class CardSelectionVC: UIViewController {
         }
     }
     
-
+//before the foor-loop you must create an outlet collection with all the buttons in the array
    
 
 }
