@@ -69,6 +69,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBq-lG-2jh"/>
+                                    <segue destination="bWb-aD-tHb" kind="presentation" id="aJ7-0z-xQO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,6 +96,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-792" y="89"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uHC-6w-MId">
+            <objects>
+                <viewController id="bWb-aD-tHb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWH-UE-2vD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q74-Ya-MLd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaC-gX-dvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="89"/>
         </scene>
     </scenes>
     <resources>
