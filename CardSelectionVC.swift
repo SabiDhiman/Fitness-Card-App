@@ -29,9 +29,21 @@ class CardSelectionVC: UIViewController {
     
 //before the foor-loop you must create an outlet collection with all the buttons in the array
    
-
+    
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func restartButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func rulesButtonTapped(_ sender: UIButton) {
+    }
+    
 }
 //1. create IBOutlets by dragging the object into the code space
 //2. create them above the viewdidload
-// an outlet give you access to an object so you can use it in code
-// an action allows you to do things to an object
+// an outlet give you access to an object and its properties so you can use it in code
+// an action allows you to do things to an object when you want something to be done
