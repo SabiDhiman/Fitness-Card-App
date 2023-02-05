@@ -10,11 +10,7 @@ import UIKit
 class CardSelectionVC: UIViewController {
 
     @IBOutlet var cardImageView: UIImageView!
-    
-    
-    @IBOutlet var stopButton: UIButton!
-    @IBOutlet var restartButton: UIButton!
-    @IBOutlet var rulesButton: UIButton!
+
     
      
     @IBOutlet var buttons: [UIButton]!
