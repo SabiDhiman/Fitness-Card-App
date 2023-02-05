@@ -12,7 +12,7 @@ class CardSelectionVC: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     //created an array with all three uibuttons  - must click the dot and drag  to all the remaining buttons
-    
+    var deck: [UIImage] = Deck.allCards
     var timer: Timer!
     
     //ALL VARIABLES GO ABOVE VIEWDIDLOAD
@@ -30,13 +30,16 @@ class CardSelectionVC: UIViewController {
     
     }
     func startTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
     }
     // target refers to class itself
     //repeat is a bool as you want the timer to repeat
     //write function to pass into startTimer function as objc method
     @objc func showRandomImage(){
-        print("timer on")
+        //here we need our array of card images
+        cardImageView.image = deck.randomElement() ?? UIImage(named: "2_of_diamonds")
+        
+    //nil colescing = assigned a default value to the function as the initial array is empty
     }
     
 //before the foor-loop you must create an outlet collection with all the buttons in the array
