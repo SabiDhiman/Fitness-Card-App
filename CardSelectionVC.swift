@@ -10,7 +10,7 @@ import UIKit
 class CardSelectionVC: UIViewController {
 
     @IBOutlet var cardImageView: UIImageView!
-    @IBOutlet var buttons: [UIButton]!
+
     //created an array with all three uibuttons  - must click the dot and drag  to all the remaining buttons
     var deck: [UIImage] = Deck.allCards
     var timer: Timer!
@@ -24,9 +24,7 @@ class CardSelectionVC: UIViewController {
 //        stopButton.layer.cornerRadius       = 8
 //        restartButton.layer.cornerRadius    = 8
 //        rulesButton.layer.cornerRadius      = 8
-        for button in buttons{
-            button.layer.cornerRadius = 8
-        }
+       
     
     }
     override func viewWillDisappear(_ animated: Bool) {
