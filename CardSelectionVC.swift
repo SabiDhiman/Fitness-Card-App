@@ -29,6 +29,10 @@ class CardSelectionVC: UIViewController {
         }
     
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated) //if you have multiple screens, switch timer off once screen in gone
+        timer.invalidate()
+    }
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
     }
@@ -46,16 +50,16 @@ class CardSelectionVC: UIViewController {
    
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        
+        timer.invalidate()
     }
     
     
     @IBAction func restartButtonTapped(_ sender: UIButton) {
-        
+        timer.invalidate()
+        startTimer()
     }
     
-    @IBAction func rulesButtonTapped(_ sender: UIButton) {
-    }
+  
     
 }
 //1. create IBOutlets by dragging the object into the code space
